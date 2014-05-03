@@ -21,6 +21,9 @@
 		557677E01914745400F40062 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557677C21914745400F40062 /* UIKit.framework */; };
 		557677E81914745400F40062 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 557677E61914745400F40062 /* InfoPlist.strings */; };
 		557677EA1914745400F40062 /* PopularTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 557677E91914745400F40062 /* PopularTests.m */; };
+		557677F419147AEA00F40062 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557677F319147AEA00F40062 /* Bolts.framework */; };
+		559D10D41914908700386B2B /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559D10D31914908700386B2B /* FacebookSDK.framework */; };
+		559D10DA1914F8DC00386B2B /* ViewControllerResultsOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 559D10D91914F8DC00386B2B /* ViewControllerResultsOneViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		557677E51914745400F40062 /* PopularTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PopularTests-Info.plist"; sourceTree = "<group>"; };
 		557677E71914745400F40062 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		557677E91914745400F40062 /* PopularTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopularTests.m; sourceTree = "<group>"; };
+		557677F319147AEA00F40062 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../../Documents/Bolts.framework; sourceTree = "<group>"; };
+		559D10D31914908700386B2B /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		559D10D81914F8DC00386B2B /* ViewControllerResultsOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerResultsOneViewController.h; sourceTree = "<group>"; };
+		559D10D91914F8DC00386B2B /* ViewControllerResultsOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerResultsOneViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +68,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				557677C11914745400F40062 /* CoreGraphics.framework in Frameworks */,
+				559D10D41914908700386B2B /* FacebookSDK.framework in Frameworks */,
 				557677C31914745400F40062 /* UIKit.framework in Frameworks */,
 				557677BF1914745400F40062 /* Foundation.framework in Frameworks */,
+				557677F419147AEA00F40062 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +110,8 @@
 		557677BD1914745400F40062 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				559D10D31914908700386B2B /* FacebookSDK.framework */,
+				557677F319147AEA00F40062 /* Bolts.framework */,
 				557677BE1914745400F40062 /* Foundation.framework */,
 				557677C01914745400F40062 /* CoreGraphics.framework */,
 				557677C21914745400F40062 /* UIKit.framework */,
@@ -115,6 +126,8 @@
 				557677CD1914745400F40062 /* AppDelegate.h */,
 				557677CE1914745400F40062 /* AppDelegate.m */,
 				557677D01914745400F40062 /* Main.storyboard */,
+				559D10D81914F8DC00386B2B /* ViewControllerResultsOneViewController.h */,
+				559D10D91914F8DC00386B2B /* ViewControllerResultsOneViewController.m */,
 				557677D31914745400F40062 /* ViewController.h */,
 				557677D41914745400F40062 /* ViewController.m */,
 				557677D61914745400F40062 /* Images.xcassets */,
@@ -250,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				557677D51914745400F40062 /* ViewController.m in Sources */,
+				559D10DA1914F8DC00386B2B /* ViewControllerResultsOneViewController.m in Sources */,
 				557677CF1914745400F40062 /* AppDelegate.m in Sources */,
 				557677CB1914745400F40062 /* main.m in Sources */,
 			);
@@ -376,6 +390,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/felipe/Documents,
+					/Users/felipe/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Popular/Popular-Prefix.pch";
 				INFOPLIST_FILE = "Popular/Popular-Info.plist";
@@ -389,6 +408,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/felipe/Documents,
+					/Users/felipe/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Popular/Popular-Prefix.pch";
 				INFOPLIST_FILE = "Popular/Popular-Info.plist";
@@ -456,6 +480,7 @@
 				557677EF1914745400F40062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		557677F01914745400F40062 /* Build configuration list for PBXNativeTarget "PopularTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +489,7 @@
 				557677F21914745400F40062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
